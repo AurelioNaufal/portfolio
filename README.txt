@@ -1,32 +1,17 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🌐 My Portfolio Website
 
+## 📌 About
+This is the source code for my personal portfolio website, designed to showcase my projects and skills.
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+## ⚖️ Credits & License
+**Theme:** Massively by HTML5 UP
+- **Website:** [html5up.net](https://html5up.net)
+- **Twitter:** [@ajlkn](https://twitter.com/ajlkn)
+- **License:** Free for personal and commercial use under the [CCA 3.0 license](https://html5up.net/license)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+> This is Massively, a text-heavy, article-oriented design built around a huge background image (with a new parallax implementation I'm testing) and scroll effects (powered by Scrollex).
 
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+**Assets:**
+- **Demo Images:** [Unsplash](https://unsplash.com)
+- **Icons:** [Font Awesome](https://fontawesome.io)
+- **Scripts:** jQuery, Scrollex, Responsive Tools
