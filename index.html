@@ -46,227 +46,251 @@
 							<li><a href="https://github.com/Aurelio-Naufal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
+				
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">May, 2025</span>
-									<h2><a href="#">Commodity Price Forecasting with PatchTST & N-HiTS<br />
+						<article class="post featured">
+							<header class="major">
+								<span class="date">May, 2025</span>
+								<h2><a href="#">Commodity Price Forecasting with PatchTST & N-HiTS<br />
+								</a></h2>
+							</header>
+							<a href="#" class="image main"><img src="images/Komoditas2.jpeg" alt="" /></a>
+							<p>In the preliminary round of Datavidia 9.0, my team forecast daily prices for 13 food commodities across 34 Indonesian provinces. We implemented NeuralForecast’s PatchTST (Transformer-based) and N-HiTS (MLP-based) models, enriching the data with national holiday features to capture seasonal spikes like Ramadan. After handling missing values and preprocessing, we trained the models in under three minutes, utilizing a rolling forecast strategy. By selecting the best-performing model per province-commodity pair, we achieved a private leaderboard MAPE score of 0.04546.</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/RifqiHafizuddin/datavidia-9" class="button large">View Project</a></li>
+							</ul>
+						</article>
+
+						<!-- Posts -->
+						<section class="posts">
+							
+							<article>
+								<header>
+									<span class="date">December, 2025</span>
+									<h2><a href="#">Transformer-based Sentiment Analysis<br />
 									</a></h2>
-									
 								</header>
-								<a href="#" class="image main"><img src="images/Komoditas2.jpeg" alt="" /></a>
-								<p>In the preliminary round of  Datavidia 9.0 (Data Science Competition), my team and I worked on forecasting daily prices of 13 food commodities across 34 provinces in Indonesia.
-										We implemented two state-of-the-art models using the NeuralForecast library: PatchTST, a Transformer-based model that learns local and long-range patterns via patching, and N-HiTS, an MLP-based model designed to capture seasonal trends using hierarchical interpolation and multi-scale sampling. To provide important context, we scraped Indonesian national holiday data and added features like whether a date is a holiday, or falls before or after one, helping the models detect price spikes during periods like Ramadan.
-										After minimal preprocessing, including removing corrupted July 2022 data and handling the rest of the missing values based on province/commodity, we trained each model on the entire dataset in under 1 minute for N-HiTS and under 3 minutes for PatchTST. We used rolling forecasting with MAPE to evaluate performance and applied a best-fit strategy, selecting the better-performing model per province-commodity pair. This approach led to a final validation MAPE of 0.0694, and we achieved a private leaderboard score of 0.04546.
-								</p>
+								<a href="#" class="image fit"><img src="images/Gemma-3(4B)_Shot_Count.png" alt="Transformer Project" /></a> <!-- Make sure to add an image -->
+								<p>Collaborating with a team, I conducted a comparative study to identify the optimal model for sentiment classification on UCI and IMDB datasets. We benchmarked traditional ML architectures (CNN, LSTM) against transforemer-based models, such as BERT-based models and Large Language Models. Our findings revealed that fine-tuning Gemma 3 (4B) yielded superior performance, achieving up to 98% accuracy and significantly outperforming standard Transformer and BERT implementations.</p>
 								<ul class="actions special">
-									<li><a href="https://github.com/RifqiHafizuddin/datavidia-9" class="button large">View Project</a></li>
+									<li><a href="https://github.com/AurelioNaufal/Digging-Deeper-Transformers-based-Models-for-Sentiment-Analysis" class="button">View Project</a></li>
 								</ul>
 							</article>
 
-						<!-- Posts -->
+							<article>
+								<header>
+									<span class="date">December, 2025</span>
+									<h2><a href="#">Big Data Storage Format Benchmarking<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/SchemaForge.png" alt="Big Data Project" /></a> <!-- Make sure to add an image -->
+								<p>This study presents an experimental framework benchmarking five major big data formats—JSONL, CSV, Parquet, Avro, and Feather—across storage size, I/O efficiency, and resource utilization. We converted datasets from JSONL to target formats and analyzed performance trade-offs. Results highlighted Parquet as the most efficient for storage and reads, while Feather excelled in in-memory analytics, providing a practical guide for selecting formats based on workload requirements.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/SchemaForge" class="button">View Project</a></li>
+								</ul>
+							</article>
 
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">May, 2025</span>
-										<h2><a href="#">Predictive Analysis for Trouble Tickets at PT Tower Bersama Infrastructure Group<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/TowerTBG.jpg" alt="" /></a>
-									<p>During my internship as a Network Operation Center Analyst at PT Tower Bersama Infrastructure Group, I was tasked with analyzing trouble ticket data from 2021 to 2025. The data consisted of various types of issues such as theft, community-related disturbances, and other tower-related problems. I visualized and explored the trends in these incidents, and conducted predictive analysis to assess whether trouble tickets were likely to increase in the future. To achieve this, I used panel regression with external socioeconomic and environmental factors, logistic regression, and time series forecasting. The analysis concluded with data-driven recommendations aimed at improving preventive strategies and operational response. </p>
-								</article>
-								<article>
-									<header>
-										<span class="date">October, 2024</span>
-										<h2><a href="#">Skin Cancer Detection App Prototype<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/SkinScan2.png" alt="" /></a>
-									<p>Collaborated with a diverse team from backgrounds in health, business, and technology, we developed a prototype of a skin cancer detection app capable of identifying over 13 cancer types and other skin conditions.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/skin-lesion2" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">November, 2024</span>
-										<h2><a href="#">Application of Fractional Kolmogorov-Arnold Networks in Monitoring Deforestation in IKN<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/fKAN.png" alt="" /></a>
-									<p>Collaborating with two of my colleagues, we utilized satellite imagery of IKN (Indonesia’s New Capital) from 2019 (before construction) and 2024 to compare and assess the extent of deforestation using fKAN Classification Algorithm</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">November, 2024</span>
-										<h2><a href="#">Comparison of Artificial Neural Network and Convolutional Neural Network Models in Predicting Mortality Due to Heart Failure<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Heart_failuer.jpeg" alt="" /></a>
-									<p>Worked with four others to develop Artificial Neural Network (ANN) and Convolutional Neural Network (CNN) models for heart failure mortality data and compared their performance. The analysis concluded that the CNN model outperformed the ANN model. In the next stage, synthetic data generation was also carried out using Generative Adversarial Networks (GAN).</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">November, 2024</span>
-										<h2><a href="#">Utilization of Official Statistics in Modeling Life Expectancy in West Java Using Spatial Regression<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/AHH.png" alt="" /></a>
-									<p>Monitoring Sustainable Development Goals (SDGs) indicators can be conducted using Official Statistics, as demonstrated in the analysis of Life Expectancy (LE) in West Java. LE reflects the estimated lifespan of the population. Multiple Linear Regression is insufficient for addressing spatial factors, leading to the use of Spatial Regression methods. Moran's I test indicates spatial dependency in LE, Average Years of Schooling (RLS), Adequate Housing (HLT), Healthcare Workers (JTK), Unemployment Rate (TPT), Poverty (PVT), and Per Capita Expenditure (PGLR). The best model is Spatial Cross Regressive (SCR) with RLS, HLT and TPT as predictors, achieving an AIC of 70.56. Active government and community roles are crucial for improving LE and supporting SDGs.
-									</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">November, 2024</span>
-										<h2><a href="#">Traffic Monitoring Using Real-Time Object Detection with YOLOv5<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/YOLOv5.png" alt="" /></a>
-									<p>This study explores the application of the YOLOv5 model for real-time traffic
-										object detection, focusing on the dynamic environment of Jalan Merdeka Barat in
-										Jakarta. The 12-second video analyzed captured various vehicle types, including
-										motorcycles,cars,and other objects.YOLOv5 detected 7,095 objects across frames
-										with significant accuracy and processing speed,and initial detections of 7,745 were
-										refined to remove overlaps through Non-Maximum Suppression(NMS), resulting in
-										cleaner,non-redundant bounding boxes.However,the model exhibited challenges in
-										detecting distant objects and differentiating between similar objects,likely due to the set confidence
-										threshold and dataset limitations.
-										It also showed occasional inconsistencies in detecting stationary and moving objects
-										across frames.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/KI_Task_Aurelio-Naufal-Effendy/blob/main/MidtermTask.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">October, 2024</span>
-										<h2><a href="#">Analysis of Tweets from the 2024 Indonesian Presidental Election<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/SatriaData_contoh.png" alt="" /></a>
-									<p>Worked with two of my colleagues for the Satria Data 2024 Big Data Challenge competition to analyze tweets from the 2024 Indonesian Presidental Election using sentiment analysis, topic modelling and social network analysis</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">October, 2024</span>
-										<h2><a href="#">Tableau Projects<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/tableau.png" alt="" /></a>
-									<p>My dashboard projects created using tableau</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/aurelio.naufal.effendy/vizzes" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">October, 2024</span>
-										<h2><a href="#">Analysis of Factors Influencing Insurance Policy Renewal at PT Allianz Utama Indonesia Using Binomial Logistic Regression<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Logo Allianz.png" alt="" /></a>
-									<p>During my internship at PT Allianz Utama Indonesia, I conducted an analysis on factors influencing insurance policy renewal using binomial logistic regression. This project involved examining customer data and policy characteristics to identify key determinants of renewal decisions.
+							<article>
+								<header>
+									<span class="date">May, 2025</span>
+									<h2><a href="#">Predictive Analysis for Trouble Tickets at TBG<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/TowerTBG.jpg" alt="" /></a>
+								<p>During my internship as a Network Operation Center Analyst at PT Tower Bersama Infrastructure Group, I analyzed trouble ticket data (2021-2025) covering theft and infrastructure issues. I utilized panel regression with socioeconomic factors, logistic regression, and time series forecasting to predict incident trends. The study culminated in data-driven recommendations to enhance preventive strategies and operational response efficiency.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Tower_Predictive_Analysis" class="button">View Project</a></li>
+								</ul>
+							</article>
 
-										I analyzed variables such as customer demographics, policy types, payment history, and claims frequency to evaluate their impact on renewal likelihood. The findings were visualized and interpreted to generate actionable insights, enabling the company to develop targeted strategies for improving renewal rates. Recommendations included optimizing customer segmentation, designing personalized renewal offers, and addressing potential obstacles in the renewal process.
-										
-										Unfortunately, due to data confidentiality, the detailed results of this project cannot be disclosed.</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">May, 2024</span>
-										<h2><a href="#">Transactional Data and Market Basket Analysis at The Daily Foodhall Menara Astra and Istana Sahid Sudirman<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/TheFoodhall.jpg" alt="" /></a>
-									<p>Internship’s innovation project at PT Swalayan Sukses Abadi (The Foodhall) which is under the management of PT Mitra Adiperkasa Tbk. Made an analysis on 4 months (January - April 2024) transactional data at the two foodhall’s minimarkets, Daily Foodhall Menara Astra and Daily Foodhall Istana Sahid Sudirman. Visualized, compared, and analyzed the revenue generated, most purchased items, transaction date (to find which month, day, and time are the busiest in terms of transaction traffic), and other aspects on both stores to create new insights and recommendations. Performed market basket analysis to see which products are related and great to sell together, then proposed promo or bundle recommendations on some items to improve sales. Unfortunately, because the data is confidential, this project can’t be shared.</p>
-									
-								</article>
-								<article>
-									<header>
-										<span class="date">November, 2023</span>
-										<h2><a href="#">Hoax Data Classification Text Analytics<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Hoax Data.png" alt="" /></a>
-									<p>Worked with 3 other people to Analyzed hoax data from mafindo by visualizing the text data, determining the best model and classifying the text data based on the model.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Case-Study-Data-Mining-Aplikasi-Model-Klasifikasi-Kelompok-8" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">October, 2023</span>
-										<h2><a href="#">Exploratory Data Analysis For Property Data in Indonesia<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Property Data.png" alt="" /></a>
-									<p>Worked with 3 other people, applied Exploratory Data Analysis and searched for insights from the property data in Indonesia in order to answer the question, Which city has the best opportunity to build a property business?</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Case-Study-Data-Mining-EDA-Data-Property-Indonesia" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June, 2023</span>
-										<h2><a href="#">Airport System Database<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Database Airport.png" alt="" /></a>
-									<p>Worked with 4 other people to create a database for airport system with SQLite.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Project-Database-Sistem-Bandara/blob/main/Laporan%20Akhir%20Database%20Kelompok%204.pdf" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June, 2023</span>
-										<h2><a href="#">Forecasting TLKM Stock Price<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Forecast TLKM.png" alt="" /></a>
-									<p>Worked with 2 other people, applied time series analysis to forecast TLKM stock price with ARIMA Model using R programming language.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Forecasting-TLKM-stock-price-with-ARIMA-model" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">December, 2022</span>
-										<h2><a href="#">Used Car Price Prediction Model<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Heatmap.png" alt="" /></a>
-									<p>Worked with 4 other people, predicted used car price with linear model and searched for insights.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Project-Linear-Model-Used-Car-Price-Prediction-Model" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June, 2022</span>
-										<h2><a href="#">Social Media Analytics about Formula E topic in Indonesia<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/FormulaE.jpeg" alt="" /></a>
-									<p>Worked with 3 other people, analyzed the sentiment of public about Formula E topic in Indonesia during the event. The social media data is obtained from Twitter (Currently called X) API.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Aurelio-Naufal/Project-Social-Media-Analytics" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+							<article>
+								<header>
+									<span class="date">October, 2024</span>
+									<h2><a href="#">Skin Cancer Detection App Prototype<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/SkinScan2.png" alt="" /></a>
+								<p>Collaborating with a multidisciplinary team, I developed an end-to-end deep learning solution for detecting skin lesions. We utilized the EfficientNet architecture for high-accuracy image classification and deployed the model via a Streamlit web interface, enabling real-time detection of over 13 types of skin cancer and conditions.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Skin-Cancer-Detection" class="button">View Project</a></li>
+								</ul>
+							</article>
 
+							<article>
+								<header>
+									<span class="date">November, 2024</span>
+									<h2><a href="#">Fractional Kolmogorov-Arnold Networks for Deforestation Monitoring<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/fKAN.png" alt="" /></a>
+								<p>In a team of three, we applied Fractional Kolmogorov-Arnold Networks (fKAN) to assess environmental changes in Indonesia’s New Capital (IKN). By analyzing satellite imagery from 2019 and 2024, we utilized this advanced classification algorithm to accurately map and quantify the extent of deforestation occurring during the construction phase.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">November, 2024</span>
+									<h2><a href="#">ANN vs CNN: Predicting Heart Failure Mortality<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Heart_failuer.jpeg" alt="" /></a>
+								<p>I worked with a team to model heart failure mortality risk, comparing the performance of Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN). Our analysis determined that the CNN architecture provided superior predictive accuracy. We further enhanced the project by generating synthetic medical data using Generative Adversarial Networks (GANs) to address class imbalance.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">November, 2024</span>
+									<h2><a href="#">Spatial Regression Modeling of Life Expectancy<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/AHH.png" alt="" /></a>
+								<p>This study leveraged Official Statistics to model Life Expectancy in West Java, addressing spatial dependencies often missed by standard linear regression. Using Spatial Cross Regressive (SCR) models, we identified Average Years of Schooling, Adequate Housing, and Unemployment Rate as key predictors (AIC 70.56), emphasizing the need for targeted government intervention to support SDGs.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">November, 2024</span>
+									<h2><a href="#">Real-Time Traffic Object Detection with YOLOv5<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/YOLOv5.png" alt="" /></a>
+								<p>This project applied the YOLOv5 object detection model to monitor real-time traffic on Jalan Merdeka Barat, Jakarta. The model successfully detected over 7,000 vehicles across varying classes with high processing speed. We refined detections using Non-Maximum Suppression (NMS) to reduce redundancy, though challenges remained in detecting distant objects due to confidence threshold limitations.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/KI_Task_Aurelio-Naufal-Effendy/blob/main/MidtermTask.ipynb" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">October, 2024</span>
+									<h2><a href="#">2024 Presidential Election Tweet Analysis<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/SatriaData_contoh.png" alt="" /></a>
+								<p>For the Satria Data 2024 Big Data Challenge, We analyzed the digital landscape of the 2024 Indonesian Presidential Election. We employed sentiment analysis, topic modeling, and social network analysis on scraped Twitter data to map public opinion and interaction patterns surrounding the candidates.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">October, 2024</span>
+									<h2><a href="#">Tableau Dashboards<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/tableau.png" alt="" /></a>
+								<p>A collection of interactive dashboards created using Tableau, demonstrating skills in data storytelling, business intelligence, and visual analytics across various datasets.</p>
+								<ul class="actions special">
+									<li><a href="https://public.tableau.com/app/profile/aurelio.naufal.effendy/vizzes" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">October, 2024</span>
+									<h2><a href="#">Insurance Policy Renewal Analysis (Allianz)<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Logo Allianz.png" alt="" /></a>
+								<p>During my internship at PT Allianz Utama Indonesia, I utilized binomial logistic regression to identify key factors influencing insurance policy renewals. By analyzing demographics, payment history, and claims, I provided actionable insights to optimize customer retention strategies, though specific results remain confidential.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">May, 2024</span>
+									<h2><a href="#">Market Basket Analysis: The Daily Foodhall<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/TheFoodhall.jpg" alt="" /></a>
+								<p>As an intern at The Daily Foodhall, I analyzed four months of transactional data to optimize sales strategies. I performed Market Basket Analysis to identify product associations for bundling and evaluated temporal transaction patterns to improve operational staffing. Due to confidentiality, the raw data cannot be disclosed.</p>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">November, 2023</span>
+									<h2><a href="#">Hoax Data Classification & Text Analytics<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Hoax Data.png" alt="" /></a>
+								<p>Leading a team of four, I developed a text analytics pipeline to classify misinformation using data from Mafindo. We performed extensive preprocessing and text visualization before benchmarking five machine learning algorithms, ultimately identifying Support Vector Machine (SVM) as the highest-performing model for hoax detection.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Case-Study-Data-Mining-Aplikasi-Model-Klasifikasi-Kelompok-8" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">October, 2023</span>
+									<h2><a href="#">EDA: Indonesia Property Data<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Property Data.png" alt="" /></a>
+								<p>In this data mining case study, my team performed comprehensive Exploratory Data Analysis (EDA) on Indonesian property data from 2021-2023. We handled missing values and visualized regional price distributions to identify cities offering the highest potential ROI for property businesses.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Case-Study-Data-Mining-EDA-Data-Property-Indonesia" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2023</span>
+									<h2><a href="#">Airport System Database<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Database Airport.png" alt="" /></a>
+								<p>I collaborated with a team to design and implement a comprehensive Airport Management System from scratch using SQLite. The project involved creating a full Entity-Relationship (ER) diagram, writing schema scripts, and running simulations to validate data integrity and operational flows.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Project-Database-Sistem-Bandara" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2023</span>
+									<h2><a href="#">Forecasting TLKM Stock Price<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Forecast TLKM.png" alt="" /></a>
+								<p>This project involved forecasting Telkom Indonesia (TLKM) stock prices using R. We conducted stationarity tests and analyzed ACF/PACF plots to construct an ARIMA model, successfully identifying the parameter configuration that yielded the lowest error metrics for accurate time-series prediction.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Forecasting-TLKM-stock-price-with-ARIMA-model" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">December, 2022</span>
+									<h2><a href="#">Used Car Price Prediction<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/Heatmap.png" alt="" /></a>
+								<p>Working with a team, I developed a Linear Regression model to predict used car prices based on numeric and categorical features. We conducted rigorous model diagnostics, including residual analysis and homoscedasticity checks, to ensure statistical validity and extract pricing insights.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Project-Linear-Model-Used-Car-Price-Prediction-Model" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2022</span>
+									<h2><a href="#">Social Media Analytics: Formula E<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/FormulaE.jpeg" alt="" /></a>
+								<p>Using the Twitter API, my team harvested and analyzed tweets during the Formula E event in Indonesia. We performed sentiment analysis and Exploratory Data Analysis (EDA) to gauge public perception, categorizing reactions into positive, negative, and neutral sentiments to understand the event's digital impact.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/Project-Social-Media-Analytics" class="button">View Project</a></li>
+								</ul>
+							</article>
+						</section>
 					
 
 				
 						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
-								<p>Central Jakarta, Indonesia<br />
+								<p>Taipei City, Taiwan<br />
 								</p>
 							</section>
 							<section>
@@ -275,7 +299,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p>arelarken32@gmail.com</p>
+								<p>aurelio.naufal32@gmail.com</p>
 							</section>
 							<section>
 								<h3>Social</h3>
