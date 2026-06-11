@@ -21,9 +21,9 @@
 					<div id="intro">
 						<h1>Aurelio Naufal Effendy Portfolio<br />
 						</h1>
-						<h3>AI | Machine Learning | Statistical Analysis | Data Analytics | Natural Language Processing</h3>
+						<h3>Machine Learning | Large Language Models | Data Analytics | Natural Language Processing | Cybersecurity</h3>
 						<a href="#" class="image main"><img src="images/bigdata_Carloscastilla-AlamyStockPhoto.webp" alt="" /></a>
-						<p>Data enthusiast proficient in  Python, R, Excel and SQL with hands-on experience in data manipulation, statistical analysis, and visualization.
+						<p>Master’s student in Computer Science and Information Engineering at NTUST. AI and Data Science enthusiast skilled in Python, R, and HTML with hands-on experience in data analysis, statistical modeling, deep learning, NLP, and LLMs.
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -43,7 +43,7 @@
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/aurelio-naufal-effendy/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://www.instagram.com/arel_naufal32/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Aurelio-Naufal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/AurelioNaufal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 				
@@ -51,30 +51,82 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- Featured Post
 						<article class="post featured">
 							<header class="major">
 								<span class="date">May, 2025</span>
-								<h2><a href="#">Commodity Price Forecasting with PatchTST & N-HiTS<br />
-								</a></h2>
+								<h2>Commodity Price Forecasting with PatchTST & N-HiTS<br />
+								</h2>
 							</header>
 							<a href="#" class="image main"><img src="images/Komoditas2.jpeg" alt="" /></a>
 							<p>In the preliminary round of Datavidia 9.0, my team forecast daily prices for 13 food commodities across 34 Indonesian provinces. We implemented NeuralForecast’s PatchTST (Transformer-based) and N-HiTS (MLP-based) models, enriching the data with national holiday features to capture seasonal spikes like Ramadan. After handling missing values and preprocessing, we trained the models in under three minutes, utilizing a rolling forecast strategy. By selecting the best-performing model per province-commodity pair, we achieved a private leaderboard MAPE score of 0.04546.</p>
 							<ul class="actions special">
 								<li><a href="https://github.com/RifqiHafizuddin/datavidia-9" class="button large">View Project</a></li>
 							</ul>
-						</article>
+						</article> -->
 
 						<!-- Posts -->
 						<section class="posts">
 							
 							<article>
 								<header>
-									<span class="date">December, 2025</span>
-									<h2><a href="#">Transformer-based Sentiment Analysis<br />
-									</a></h2>
+									<span class="date">June, 2026</span>
+									<h2>AQI Prediction in Taiwan: Comparative Study of Ensemble Learning Methods with SHAP Interpretability<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Gemma-3(4B)_Shot_Count.png" alt="Transformer Project" /></a> <!-- Make sure to add an image -->
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/taiwan_aqi.png" alt="MLDA Project" /></a> <!-- Make sure to add an image -->
+								<p>I conducted a comprehensive study benchmarking 11 machine learning and deep learning architectures for hourly Air Quality Index (AQI) forecasting across Taiwan's regional monitoring stations using 2024 EPA sensor data. Models spanning baseline linear regression, boosting methods (XGBoost, LightGBM, CatBoost, GBR), meta-ensemble techniques (Stacking, Bagging, Weighted Voting), and deep learning (LSTM, MLP) were evaluated under a strict temporal train-val-test split to prevent data leakage, with hyperparameters tuned via Optuna. GBR achieved the best performance with an R² of 0.9996, and SHAP analysis identified PM2.5, O₃ 8-hour average, and dominant pollutant category as the top predictive features.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AurelioNaufal/AQI-Prediction-in-Taiwan-Comparative-Study-of-Ensemble-Learning-Methods-with-SHAP-Interpretability" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2026</span>
+									<h2>Federated Learning: Gradient Leakage Attacks and Privacy Defenses<br />
+									</h2>
+								</header>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/FL.png" alt="Data Privacy Project" /></a> <!-- Make sure to add an image -->
+								<p>Collaborating with a team, we investigated privacy vulnerabilities and defenses in Federated Learning (FL) systems across MNIST, FashionMNIST, and CIFAR-10 datasets. We first demonstrated that gradients alone can leak sensitive training data by implementing a DLG-style Gradient Leakage Attack, successfully reconstructing private client images from shared model updates. Two defense mechanisms were then evaluated: Differential Privacy (DP), which introduces calibrated noise to limit information leakage, and Homomorphic Encryption (HE), which enables fully encrypted server-side aggregation, revealing a clear privacy-accuracy trade-off in DP and a computation-time trade-off in HE.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/misbullah-cs-usk/Federated-Learning-Final-Project-SecureBytes" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2026</span>
+									<h2>Explainable Sequence-Based MITRE ATT&CK Technique Detection from Endpoint Telemetry Using AI and Large Language Models<br />
+									</h2>
+								</header>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Mitreattack.png" alt="Cybersecurity Project" /></a> <!-- Make sure to add an image -->
+								<p>Collaborating with a team, we developed an AI-assisted cybersecurity system for automatically attributing MITRE ATT&CK techniques from Windows/Sysmon endpoint logs using the Splunk Attack Dataset. The project compared classical ML (TF-IDF + SGD), Transformer-based models, and three input representations (event-level, source-file sequences, and sliding-window sequences) across both flat and hierarchical parent-to-sub-technique classification. An LLM-based explainability layer was also integrated, combining ML predictions with human-readable SOC-friendly explanations and generating supervised fine-tuning data for future local security assistant deployment.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/misbullah-cs-usk/mitre-attack-detection-and-explainability-insect/" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">June, 2026</span>
+									<h2>LLM-Assisted Automated Web Application Penetration Testing Framework <br />
+									</h2>
+								</header>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/LLM_Penetration.png" alt="Cyber-LLM Project" /></a> <!-- Make sure to add an image -->
+								<p>As part of a team, we designed and implemented an end-to-end LLM-augmented automated penetration testing framework for web applications, developed as a final project for the Applying LLMs in Cybersecurity Systems course at NTUST. The system chains ten open-source security tools across a seven-stage pipeline, from reconnaissance and vulnerability assessment to exploit execution and automated report generation, powered by a RAG-backed LLM that reasons over scan findings and assigns standardized CVSS v3.1 severity scores. Validated against OWASP Juice Shop, the framework confirmed 20 solved challenges and produced an overall security score of 39.8/100, demonstrating the practical applicability of LLMs in offensive cybersecurity automation.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/AhmadRifqi86/llm-cyber-project" class="button">View Project</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<span class="date">December, 2025</span>
+									<h2>Transformer-based Sentiment Analysis<br />
+									</h2>
+								</header>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Gemma-3(4B)_Shot_Count.png" alt="Transformer Project" /></a> <!-- Make sure to add an image -->
 								<p>Collaborating with a team, I conducted a comparative study to identify the optimal model for sentiment classification on UCI and IMDB datasets. We benchmarked traditional ML architectures (CNN, LSTM) against transforemer-based models, such as BERT-based models and Large Language Models. Our findings revealed that fine-tuning Gemma 3 (4B) yielded superior performance, achieving up to 98% accuracy and significantly outperforming standard Transformer and BERT implementations.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Digging-Deeper-Transformers-based-Models-for-Sentiment-Analysis" class="button">View Project</a></li>
@@ -84,10 +136,10 @@
 							<article>
 								<header>
 									<span class="date">December, 2025</span>
-									<h2><a href="#">Big Data Storage Format Benchmarking<br />
-									</a></h2>
+									<h2>Big Data Storage Format Benchmarking<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/SchemaForge.png" alt="Big Data Project" /></a> <!-- Make sure to add an image -->
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/SchemaForge.png" alt="Big Data Project" /></a> <!-- Make sure to add an image -->
 								<p>This study presents an experimental framework benchmarking five major big data formats—JSONL, CSV, Parquet, Avro, and Feather—across storage size, I/O efficiency, and resource utilization. We converted datasets from JSONL to target formats and analyzed performance trade-offs. Results highlighted Parquet as the most efficient for storage and reads, while Feather excelled in in-memory analytics, providing a practical guide for selecting formats based on workload requirements.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/SchemaForge" class="button">View Project</a></li>
@@ -97,10 +149,23 @@
 							<article>
 								<header>
 									<span class="date">May, 2025</span>
-									<h2><a href="#">Predictive Analysis for Trouble Tickets at TBG<br />
-									</a></h2>
+									<h2>Commodity Price Forecasting with PatchTST & N-HiTS<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/TowerTBG.jpg" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Komoditas2.jpeg" alt="" /></a>
+								<p>In the preliminary round of Datavidia 9.0, my team forecast daily prices for 13 food commodities across 34 Indonesian provinces. We implemented NeuralForecast’s PatchTST (Transformer-based) and N-HiTS (MLP-based) models, enriching the data with national holiday features to capture seasonal spikes like Ramadan. After handling missing values and preprocessing, we trained the models in under three minutes, utilizing a rolling forecast strategy. By selecting the best-performing model per province-commodity pair, we achieved a private leaderboard MAPE score of 0.04546.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/RifqiHafizuddin/datavidia-9" class="button large">View Project</a></li>
+								</ul>
+							</article> 
+
+							<article>
+								<header>
+									<span class="date">May, 2025</span>
+									<h2>Predictive Analysis for Trouble Tickets at TBG<br />
+									</h2>
+								</header>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/TowerTBG.jpg" alt="" /></a>
 								<p>During my internship as a Network Operation Center Analyst at PT Tower Bersama Infrastructure Group, I analyzed trouble ticket data (2021-2025) covering theft and infrastructure issues. I utilized panel regression with socioeconomic factors, logistic regression, and time series forecasting to predict incident trends. The study culminated in data-driven recommendations to enhance preventive strategies and operational response efficiency.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Tower_Predictive_Analysis" class="button">View Project</a></li>
@@ -110,11 +175,11 @@
 							<article>
 								<header>
 									<span class="date">October, 2024</span>
-									<h2><a href="#">Skin Cancer Detection App Prototype<br />
-									</a></h2>
+									<h2>Skin Cancer Detection App Prototype<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/SkinScan2.png" alt="" /></a>
-								<p>Collaborating with a multidisciplinary team, I developed an end-to-end deep learning solution for detecting skin lesions. We utilized the EfficientNet architecture for high-accuracy image classification and deployed the model via a Streamlit web interface, enabling real-time detection of over 13 types of skin cancer and conditions.</p>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/SkinScan2.png" alt="" /></a>
+								<p>Collaborating with a multidisciplinary team for a health hackathon and innovation competition, I developed an end-to-end deep learning solution for detecting skin lesions. We utilized the EfficientNet architecture for high-accuracy image classification and deployed the model via a Streamlit web interface, enabling real-time detection of over 13 types of skin cancer and conditions.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Skin-Cancer-Detection" class="button">View Project</a></li>
 								</ul>
@@ -123,40 +188,40 @@
 							<article>
 								<header>
 									<span class="date">November, 2024</span>
-									<h2><a href="#">Fractional Kolmogorov-Arnold Networks for Deforestation Monitoring<br />
-									</a></h2>
+									<h2>Fractional Kolmogorov-Arnold Networks for Deforestation Monitoring<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/fKAN.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/fKAN.png" alt="" /></a>
 								<p>In a team of three, we applied Fractional Kolmogorov-Arnold Networks (fKAN) to assess environmental changes in Indonesia’s New Capital (IKN). By analyzing satellite imagery from 2019 and 2024, we utilized this advanced classification algorithm to accurately map and quantify the extent of deforestation occurring during the construction phase.</p>
 							</article>
 
 							<article>
 								<header>
 									<span class="date">November, 2024</span>
-									<h2><a href="#">ANN vs CNN: Predicting Heart Failure Mortality<br />
-									</a></h2>
+									<h2>ANN vs CNN: Predicting Heart Failure Mortality<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Heart_failuer.jpeg" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Heart_failuer.jpeg" alt="" /></a>
 								<p>I worked with a team to model heart failure mortality risk, comparing the performance of Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN). Our analysis determined that the CNN architecture provided superior predictive accuracy. We further enhanced the project by generating synthetic medical data using Generative Adversarial Networks (GANs) to address class imbalance.</p>
 							</article>
 
 							<article>
 								<header>
 									<span class="date">November, 2024</span>
-									<h2><a href="#">Spatial Regression Modeling of Life Expectancy<br />
-									</a></h2>
+									<h2>Spatial Regression Modeling of Life Expectancy<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/AHH.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/AHH.png" alt="" /></a>
 								<p>This study leveraged Official Statistics to model Life Expectancy in West Java, addressing spatial dependencies often missed by standard linear regression. Using Spatial Cross Regressive (SCR) models, we identified Average Years of Schooling, Adequate Housing, and Unemployment Rate as key predictors (AIC 70.56), emphasizing the need for targeted government intervention to support SDGs.</p>
 							</article>
 
 							<article>
 								<header>
 									<span class="date">November, 2024</span>
-									<h2><a href="#">Real-Time Traffic Object Detection with YOLOv5<br />
-									</a></h2>
+									<h2>Real-Time Traffic Object Detection with YOLOv5<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/YOLOv5.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/YOLOv5.png" alt="" /></a>
 								<p>This project applied the YOLOv5 object detection model to monitor real-time traffic on Jalan Merdeka Barat, Jakarta. The model successfully detected over 7,000 vehicles across varying classes with high processing speed. We refined detections using Non-Maximum Suppression (NMS) to reduce redundancy, though challenges remained in detecting distant objects due to confidence threshold limitations.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/KI_Task_Aurelio-Naufal-Effendy/blob/main/MidtermTask.ipynb" class="button">View Project</a></li>
@@ -166,79 +231,79 @@
 							<article>
 								<header>
 									<span class="date">October, 2024</span>
-									<h2><a href="#">2024 Presidential Election Tweet Analysis<br />
-									</a></h2>
+									<h2>2024 Presidential Election Tweet Analysis<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/SatriaData_contoh.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/SatriaData_contoh.png" alt="" /></a>
 								<p>For the Satria Data 2024 Big Data Challenge, We analyzed the digital landscape of the 2024 Indonesian Presidential Election. We employed sentiment analysis, topic modeling, and social network analysis on scraped Twitter data to map public opinion and interaction patterns surrounding the candidates.</p>
 							</article>
 
-							<article>
+							<!-- <article>
 								<header>
 									<span class="date">October, 2024</span>
-									<h2><a href="#">Tableau Dashboards<br />
-									</a></h2>
+									<h2>Tableau Dashboards<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/tableau.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/tableau.png" alt="" /></a>
 								<p>A collection of interactive dashboards created using Tableau, demonstrating skills in data storytelling, business intelligence, and visual analytics across various datasets.</p>
 								<ul class="actions special">
 									<li><a href="https://public.tableau.com/app/profile/aurelio.naufal.effendy/vizzes" class="button">View Project</a></li>
 								</ul>
-							</article>
+							</article> -->
 
 							<article>
 								<header>
 									<span class="date">October, 2024</span>
-									<h2><a href="#">Insurance Policy Renewal Analysis (Allianz)<br />
-									</a></h2>
+									<h2>Insurance Policy Renewal Analysis (Allianz)<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Logo Allianz.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Logo Allianz.png" alt="" /></a>
 								<p>During my internship at PT Allianz Utama Indonesia, I utilized binomial logistic regression to identify key factors influencing insurance policy renewals. By analyzing demographics, payment history, and claims, I provided actionable insights to optimize customer retention strategies, though specific results remain confidential.</p>
 							</article>
 
 							<article>
 								<header>
 									<span class="date">May, 2024</span>
-									<h2><a href="#">Market Basket Analysis: The Daily Foodhall<br />
-									</a></h2>
+									<h2>Market Basket Analysis: The Daily Foodhall<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/TheFoodhall.jpg" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/TheFoodhall.jpg" alt="" /></a>
 								<p>As an intern at The Daily Foodhall, I analyzed four months of transactional data to optimize sales strategies. I performed Market Basket Analysis to identify product associations for bundling and evaluated temporal transaction patterns to improve operational staffing. Due to confidentiality, the raw data cannot be disclosed.</p>
 							</article>
 
 							<article>
 								<header>
 									<span class="date">November, 2023</span>
-									<h2><a href="#">Hoax Data Classification & Text Analytics<br />
-									</a></h2>
+									<h2>Hoax Data Classification & Text Analytics<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Hoax Data.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Hoax Data.png" alt="" /></a>
 								<p>Leading a team of four, I developed a text analytics pipeline to classify misinformation using data from Mafindo. We performed extensive preprocessing and text visualization before benchmarking five machine learning algorithms, ultimately identifying Support Vector Machine (SVM) as the highest-performing model for hoax detection.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Case-Study-Data-Mining-Aplikasi-Model-Klasifikasi-Kelompok-8" class="button">View Project</a></li>
 								</ul>
 							</article>
 
-							<article>
+							<!-- <article>
 								<header>
 									<span class="date">October, 2023</span>
-									<h2><a href="#">EDA: Indonesia Property Data<br />
-									</a></h2>
+									<h2>EDA: Indonesia Property Data<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Property Data.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Property Data.png" alt="" /></a>
 								<p>In this data mining case study, my team performed comprehensive Exploratory Data Analysis (EDA) on Indonesian property data from 2021-2023. We handled missing values and visualized regional price distributions to identify cities offering the highest potential ROI for property businesses.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Case-Study-Data-Mining-EDA-Data-Property-Indonesia" class="button">View Project</a></li>
 								</ul>
-							</article>
+							</article> -->
 
 							<article>
 								<header>
 									<span class="date">June, 2023</span>
-									<h2><a href="#">Airport System Database<br />
-									</a></h2>
+									<h2>Airport System Database<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Database Airport.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Database Airport.png" alt="" /></a>
 								<p>I collaborated with a team to design and implement a comprehensive Airport Management System from scratch using SQLite. The project involved creating a full Entity-Relationship (ER) diagram, writing schema scripts, and running simulations to validate data integrity and operational flows.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Project-Database-Sistem-Bandara" class="button">View Project</a></li>
@@ -248,36 +313,36 @@
 							<article>
 								<header>
 									<span class="date">June, 2023</span>
-									<h2><a href="#">Forecasting TLKM Stock Price<br />
-									</a></h2>
+									<h2>Forecasting TLKM Stock Price<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Forecast TLKM.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Forecast TLKM.png" alt="" /></a>
 								<p>This project involved forecasting Telkom Indonesia (TLKM) stock prices using R. We conducted stationarity tests and analyzed ACF/PACF plots to construct an ARIMA model, successfully identifying the parameter configuration that yielded the lowest error metrics for accurate time-series prediction.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Forecasting-TLKM-stock-price-with-ARIMA-model" class="button">View Project</a></li>
 								</ul>
 							</article>
 
-							<article>
+							<!-- <article>
 								<header>
 									<span class="date">December, 2022</span>
-									<h2><a href="#">Used Car Price Prediction<br />
-									</a></h2>
+									<h2>Used Car Price Prediction<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/Heatmap.png" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/Heatmap.png" alt="" /></a>
 								<p>Working with a team, I developed a Linear Regression model to predict used car prices based on numeric and categorical features. We conducted rigorous model diagnostics, including residual analysis and homoscedasticity checks, to ensure statistical validity and extract pricing insights.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Project-Linear-Model-Used-Car-Price-Prediction-Model" class="button">View Project</a></li>
 								</ul>
-							</article>
+							</article> -->
 
 							<article>
 								<header>
 									<span class="date">June, 2022</span>
-									<h2><a href="#">Social Media Analytics: Formula E<br />
-									</a></h2>
+									<h2>Social Media Analytics: Formula E<br />
+									</h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/FormulaE.jpeg" alt="" /></a>
+								<a href="javascript:void(0)" class="image fit img-zoom"><img src="images/FormulaE.jpeg" alt="" /></a>
 								<p>Using the Twitter API, my team harvested and analyzed tweets during the Formula E event in Indonesia. We performed sentiment analysis and Exploratory Data Analysis (EDA) to gauge public perception, categorizing reactions into positive, negative, and neutral sentiments to understand the event's digital impact.</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/AurelioNaufal/Project-Social-Media-Analytics" class="button">View Project</a></li>
@@ -306,7 +371,7 @@
 								<ul class="icons alt">
 									<li><a href="https://www.linkedin.com/in/aurelio-naufal-effendy/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://www.instagram.com/arel_naufal32/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/Aurelio-Naufal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/AurelioNaufal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -319,6 +384,11 @@
 
 			</div>
 
+		<!-- Lightbox -->
+			<div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9999;cursor:pointer;align-items:center;justify-content:center;">
+				<img id="lightbox-img" style="max-width:90%;max-height:90%;object-fit:contain;border-radius:4px;box-shadow:0 0 40px rgba(0,0,0,0.6);">
+			</div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -327,6 +397,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll('.img-zoom img').forEach(function(img) {
+					img.style.cursor = 'zoom-in';
+					img.closest('.img-zoom').addEventListener('click', function(e) {
+						e.preventDefault();
+						var lb = document.getElementById('lightbox');
+						document.getElementById('lightbox-img').src = img.src;
+						lb.style.display = 'flex';
+					});
+				});
+				document.getElementById('lightbox').addEventListener('click', function() {
+					this.style.display = 'none';
+				});
+			</script>
 
 	</body>
 
